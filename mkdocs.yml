@@ -1,0 +1,4 @@
+site_name: 2025 URSSI Docs
+site_url: https://timmonko.github.io/urssi-docs/
+theme:
+  name: material

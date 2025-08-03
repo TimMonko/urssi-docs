@@ -1,0 +1,28 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Test that docs build without error
+        if: github.event_name == 'pull_request'
+        run: uv run mkdocs build --strict
+
+      - name: Deploy docs to GitHub Pages
+        if: github.event_name == 'push'
+        run: uv run mkdocs gh-deploy --strict --force
