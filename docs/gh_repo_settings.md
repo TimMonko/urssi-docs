@@ -4,8 +4,6 @@
 
 Use pull requests for all changes to the codebase. Not only does this make changes safer, especially with regards to CI checks, but it also provides a clear history of changes made to the codebase. This is particularly useful for understanding the evolution of the code because it allows you to see what changes were made, when, and by whom. More than just `git blame`, many IDEs provide a way to view the history of the PR, including the discussions and commits that led to the final merged PR. This is invaluable not only for remembering your own work, but for documenting the codebase for others. *Even if you are working on a project alone, using a PR approach will prove invaluable at times.*
 
-A few recommendations to optimize this process:
-
 ## General Repo Settings
 
 Use only Squash and Merge to keep a clean commit history. Use PR title and description to document the merge commit. Again, blame will allow you to find the PR and its discussion.
