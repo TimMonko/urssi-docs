@@ -8,7 +8,7 @@ A few recommendations to optimize this process:
 
 ## General Repo Settings
 
-Use only Squash and Merge to keep a clean commit history. Use PR title and description to document the merge commit. Again, blame will allow you to find the PR and its discussion. 
+Use only Squash and Merge to keep a clean commit history. Use PR title and description to document the merge commit. Again, blame will allow you to find the PR and its discussion.
 
 ![Github Pull Request Settings](assets/gh-pr-settings.png)
 
@@ -24,7 +24,7 @@ Set up branch protection rules to ensure that the main branch is protected from 
 In Repo Settings -> Rulesets.
 
 1. Name and activate a ruleset
-2. Protect the default branch and add the `gh-pages` branch if using for docs.
+2. Protect the default branch (`main`).
 3. Leave on the default settings
 4. Turn on "Require a pull request before merging". Use settings appropriate for yourself or team.
 5. Read through the rest of the settings and determine if they are appropriate for your project.

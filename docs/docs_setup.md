@@ -42,9 +42,9 @@ While you *can* manage a static site by locally building and uploading the `site
 
 ## Deploy Documentation
 
-Instead of building the docs locally, we will use GitHub Actions to build and deploy the documentation.
+We are easily able to deploy documentation to Github Pages where it will be found at `https://<username or org-name>.github.io/<repo-name>/`. This is a great way to host documentation as a static site, and it is free! On your main repo page, go to the Description settings and check `Use your Github Pages website`. Your documentation, by default, will be served from the `gh-pages` branch.
 
-MkDocs provides a way to manually deploy to GitHub Pages `mkdocs gh-deploy`, but again, this requires local management *and* goes against the ethos of using PRs to manage changes to the codebase.
+MkDocs provides a way to locally, manually deploy to `gh-pages` with `mkdocs gh-deploy`, but again, this requires local management *and* goes against the ethos of using PRs to manage changes to the codebase.
 
 Instead, we will use a GitHub Action to automatically build the documentation in PRs and commits to main, and deploy the docs to GitHub Pages when a PR is merged to main. MkDocs-Materials provides an action to do this, which is documented in the [MkDocs-Material documentation](https://squidfunk.github.io/mkdocs-material/publishing-your-site/), but we will use a custom action.
 
