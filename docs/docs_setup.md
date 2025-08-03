@@ -28,7 +28,7 @@ Follow the [setup instructions](https://squidfunk.github.io/mkdocs-material/crea
 
 Add documentation to `docs/`. Save, and watch a live update in your browser.
 
-Make commits and push to your repo, preferably with a PR. (See [Recommended Github Repo Settings](docs/gh_repo_settings.md) for more details on how to set up your repo.)
+Make commits and push to your repo, preferably with a PR. (See [Recommended Github Repo Settings](gh_repo_settings.md) for more details on how to set up your repo.)
 
 To build the documentation locally, use
 
