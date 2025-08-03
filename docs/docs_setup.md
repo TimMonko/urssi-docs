@@ -84,3 +84,9 @@ jobs:
 ```
 
 Now, when you create a PR the docs will be tested to ensure they build without error. When you merge a PR to main, the docs will be built and deployed to GitHub Pages.
+
+While writing this, I got the error in my [action on the PR](https://github.com/TimMonko/urssi-docs/actions/runs/16708940401/job/47291006777?pr=1). Helpful!
+
+```bash
+WARNING -  Doc file 'docs-setup.md' contains a link 'docs/gh_repo_settings.md', but the target is not found among documentation files.
+```
