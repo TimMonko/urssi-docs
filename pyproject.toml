@@ -25,7 +25,3 @@ dependencies = [
 "Homepage" = "https://timmonko.github.io/urssi-docs/"
 "Bug Reports" = "https://github.com/timmonko/urssi-docs/issues"
 "Source" = "https://github.com/timmonko/urssi-docs/"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
