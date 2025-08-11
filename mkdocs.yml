@@ -2,3 +2,19 @@ site_name: 2025 URSSI Docs
 site_url: https://timmonko.github.io/urssi-docs/
 theme:
   name: material
+
+markdown_extensions:
+  - admonition
+
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true

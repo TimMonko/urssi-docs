@@ -8,12 +8,10 @@ However, my biggest caution is that code documentation can often be ignored and 
 
 Documenting code has many perspectives, here are a few perspectives that I have appreciated over time.
 
-```{tip}
-Sections have an opinionated order from most to least important.
-```
+!!! note
+    Sections have an opinionated order from most to least important.
 
 ## Suggested Reading
-
 
 ## Object Names
 
@@ -79,6 +77,7 @@ def threshold_otsu_minimum(
     -------
     threshold : int | float
         Threshold value
+    """
     ... 
 ```
 
@@ -95,6 +94,8 @@ def test_threshold_otsu_with_minimum():
 ## Code Style
 
 Following a consistent code style can greatly help readability and understanding of a codebase. Sometimes, code style can become a mess in projects, and it also becomes harder to contribute to that project because there is uncertainty on even how to start writing code. If a project has a fairly regular codestyle, don't be afraid to contribute because these projects are (usually) very helpful at providing suggestions to adopt code to meet any standards that might exist. This particularly is better is the enemy of the good.
+
+[PyOpenSci](https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/document-your-code-api-docstrings.html#three-python-docstring-formats-and-why-we-like-numpy-style) has better words than I can write.
 
 ## Other Tips
 
