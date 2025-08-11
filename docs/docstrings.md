@@ -1,4 +1,4 @@
-# Documentation of Code
+# Code Documentation
 
 In my experience docstrings and code style are the **best** way to assist reviewers of code -- both your future self and colleagues. Also, this is the documentation that saves yours and others life when it comes to future contribution. As such, this page will reflect on a variety of perhaps surprising ways that code gets documentated.
 
@@ -42,7 +42,7 @@ Other uses of comments include linking to references, such as external documenta
 
 ## Typing
 
-I'm not here to endorse Typing as the "correct" way to write Python. BUT, I am here to show you how (minimally) typing your code greatly helps. Typing can also show up in IDEs, which helps users and developers work with your code.
+I am not here to endorse Typing as the "correct" way to write Python (indeed, I'm hesistant with some perspectives towards typing). BUT, I am here to show you how (minimally) typing your code greatly helps. Typing can also show up in IDEs, which helps users and developers work with your code.
 
 ```python
 def threshold_otsu_minimum(img, min_value = None):
@@ -79,13 +79,13 @@ def threshold_otsu_minimum(
     ... 
 ```
 
-## Code Style
-
-Following a consistent code style can greatly help readability and understanding 
-
 ## Tests?!?!
 
-Tests are another form of documentation. Tests help us crystallize what we 
+Tests are another form of documentation. Tests help us crystallize for both ourselves and for collaborators the purpose of our code. At least for unit tests, they can also form a sort of documentation. Just some encouragement to take the time to write tests, they are as important as making functions that (you think) work.
+
+## Code Style
+
+Following a consistent code style can greatly help readability and understanding of a codebase. Sometimes, code style can become a mess in projects, and it also becomes harder to contribute to that project because there is uncertainty on even how to start writing code. If a project has a fairly regular codestyle, don't be afraid to contribute because these projects are (usually) very helpful at providing suggestions to adopt code to meet any standards that might exist. This particularly is better is the enemy of the good.
 
 ## Other Tips
 
