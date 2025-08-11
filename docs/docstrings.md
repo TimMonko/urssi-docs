@@ -42,7 +42,42 @@ Other uses of comments include linking to references, such as external documenta
 
 ## Typing
 
-I'm not 
+I'm not here to endorse Typing as the "correct" way to write Python. BUT, I am here to show you how (minimally) typing your code greatly helps. Typing can also show up in IDEs, which helps users and developers work with your code.
+
+```python
+def threshold_otsu_minimum(img, min_value = None):
+    """Get threshold value of an image
+
+    Return the threshold value of an image. If the value determined by
+    Otsu's algorithm is smaller than a minimum_value, then return the minimum value. 
+    This strategy prevents thresholding below a specified value,
+    which is useful when an image may be all background and have no signal to threshold.
+    """
+    threshold = filters.threshold_otsu(img)
+    if min_value is not None and min_value > threshold:
+        threshold = min_value
+    return threshold
+
+
+def threshold_otsu_minimum(
+    img: np.ndarray,
+    min_value: int | float | None = None
+) -> int | float:
+    """Get Otsu's threshold or a minimum of an image
+
+    Parameters
+    ----------
+    img : np.ndarray
+        Image-like array to threshold
+    min_value : Optional
+        Minimum return value for the threshold
+
+    Returns
+    -------
+    threshold : int | float
+        Threshold value
+    ... 
+```
 
 ## Code Style
 
