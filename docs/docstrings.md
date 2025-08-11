@@ -11,8 +11,6 @@ Documenting code has many perspectives, here are a few perspectives that I have 
 !!! note
     Sections have an opinionated order from most to least important.
 
-## Suggested Reading
-
 ## Object Names
 
 This is where documentation starts and is why its deserving of its own section. If objects are named poorly it becomes a real challenge to follow code.
@@ -27,6 +25,8 @@ Longer names can be an especially useful form of self documentation, especially 
 ## Docstrings
 
 These are especially helpful for collaboration with developers *and* are the main way to communicate to users. IDEs can richly show information if both docstrings and the IDE is set up correctly. Docstrings can be extremely powerful ways to document API, and docs tooling makes it very easy to add this to your website.
+
+[PyOpenSci](https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/document-your-code-api-docstrings.html#three-python-docstring-formats-and-why-we-like-numpy-style) has better words than I can write.
 
 ```python
 def 
@@ -94,8 +94,6 @@ def test_threshold_otsu_with_minimum():
 ## Code Style
 
 Following a consistent code style can greatly help readability and understanding of a codebase. Sometimes, code style can become a mess in projects, and it also becomes harder to contribute to that project because there is uncertainty on even how to start writing code. If a project has a fairly regular codestyle, don't be afraid to contribute because these projects are (usually) very helpful at providing suggestions to adopt code to meet any standards that might exist. This particularly is better is the enemy of the good.
-
-[PyOpenSci](https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/document-your-code-api-docstrings.html#three-python-docstring-formats-and-why-we-like-numpy-style) has better words than I can write.
 
 ## Other Tips
 
