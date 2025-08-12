@@ -5,11 +5,11 @@ theme:
 
 markdown_extensions:
   - admonition
-
   - toc:
       permalink: true
-
   # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
@@ -21,3 +21,6 @@ markdown_extensions:
 
 plugins:
   - mkdocs-jupyter:
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
