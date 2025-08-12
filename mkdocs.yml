@@ -20,4 +20,4 @@ markdown_extensions:
       alternate_style: true
 
 plugins:
-    - mkdocs-jupyter:
+  - mkdocs-jupyter:
