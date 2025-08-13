@@ -31,7 +31,7 @@ def hello_world():
 
 ## Emojis :cat:
 
-Emojis can bcan be added with the mkdocs markdown extension `pymdownx.emoji`. To use it, add the following to your `mkdocs.yml`:
+Emojis can can be added with the mkdocs markdown extension `pymdownx.emoji`. To use it, add the following to your `mkdocs.yml`:
 
 ```yaml
 markdown_extensions:
@@ -87,4 +87,3 @@ $E = mc^2$
 `$$\int_0^\infty e^{-x} dx = 1$$` block form
 
 $$\int_0^\infty e^{-x} dx = 1$$
-
