@@ -64,7 +64,9 @@ Displays as
 
 ## Cross-references :link:
 
-[Versioning](Versioning)
+`[Versioning](versioning.md)` will link as [Versioning](versioning.md).
+
+`[Versioning Sub Header](versioning.md#versioning-frameworks)` will link to a sub-header as [Versioning Sub Header](versioning.md#versioning-frameworks) and link directly to the section!
 
 ## Math :heavy_plus_sign:
 

@@ -9,6 +9,7 @@ nav:
   - Repository Documentation: repo_setup.md
   - GitHub Repo Settings: gh_repo_settings.md
   - Documenting Code: docstrings.md
+  - Making Your Docs Shine: advanced_markdown.md
   - Notebooks: notebooks.ipynb
   - Versioning: versioning.md
 
