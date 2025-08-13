@@ -1,0 +1,667 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://timmonko.github.io/urssi-docs/docstrings/">
+      
+      
+        <link rel="prev" href="../gh_repo_settings/">
+      
+      
+        <link rel="next" href="../advanced_markdown/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Documenting Code - 2025 URSSI Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="2025 URSSI Docs" class="md-header__button md-logo" aria-label="2025 URSSI Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            2025 URSSI Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documenting Code
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="2025 URSSI Docs" class="md-nav__button md-logo" aria-label="2025 URSSI Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    2025 URSSI Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docs Deployment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../repo_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Repository Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh_repo_settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitHub Repo Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Documenting Code
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documenting Code
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#object-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Names
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docstrings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commenting-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commenting code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests?!?!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Style
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Tips
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_markdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Making Your Docs Shine
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notebooks as Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Versioning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#object-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Names
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docstrings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commenting-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commenting code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests?!?!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Style
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Tips
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="code-documentation">Code Documentation<a class="headerlink" href="#code-documentation" title="Permanent link">&para;</a></h1>
+<p>In my experience docstrings and code style are the <strong>best</strong> way to assist reviewers of code -- both your future self and colleagues. Also, this is the documentation that saves yours and others life when it comes to future contribution. As such, this page will reflect on a variety of perhaps surprising ways that code gets documented.</p>
+<p>Most code documentation is <em>for developers</em>, but docstrings in particular are <em>for users</em>.</p>
+<p>However, my biggest caution is that code documentation can often be ignored and frequently goes out of date. Try to be mindful of this and also don't fully rely on docstrings to be fully correct. Yet, if you find something amiss in a docstrings, projects usually warmly welcome even "small" (i.e. typo) contributions to fix docstrings!</p>
+<p>Documenting code has many perspectives, here are a few perspectives that I have appreciated over time.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sections have an opinionated order from most to least important.</p>
+</div>
+<h2 id="object-names">Object Names<a class="headerlink" href="#object-names" title="Permanent link">&para;</a></h2>
+<p>This is where documentation starts and is why its deserving of its own section. If objects are named poorly it becomes a real challenge to follow code.</p>
+<p>Object names should bias towards descriptive rather than short. Single variables names are notoriously hard to understand (except in some cases like norms in list comprehension). Use "active" naming or verbs for functions / methods.</p>
+<p>Longer names can be an especially useful form of self documentation, especially when objects are re-used across a codebase. </p>
+<ol>
+<li><code>img_array_width</code> not <code>width</code></li>
+<li><code>calculate_max_of_array()</code> not <code>do_math()</code> (see <a href="./#typing">Typing</a> though)</li>
+</ol>
+<h2 id="docstrings">Docstrings<a class="headerlink" href="#docstrings" title="Permanent link">&para;</a></h2>
+<p>These are especially helpful for collaboration with developers <em>and</em> are the main way to communicate to users. IDEs can richly show information if both docstrings and the IDE is set up correctly. Docstrings can be extremely powerful ways to document API, and docs tooling makes it very easy to add this to your website.</p>
+<p>Great reading from <a href="https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/document-your-code-api-docstrings.html">PyOpenSci</a></p>
+<h2 id="commenting-code">Commenting code<a class="headerlink" href="#commenting-code" title="Permanent link">&para;</a></h2>
+<p>Documentation of functionality via comments should be reserved for instances where the aforementioned code documentation is <em>insufficient</em> to understand what some lines are code are doing. Generally this explains as much <em>why</em> the implementation exists as it does <em>what</em> the implementation is.</p>
+<p>Other uses of comments include linking to references, such as external documentation, PRs, or explanations of bug/fixes.</p>
+<p><code># TODO</code> can be used if you need to bookmark anything and is universal enough to be highlighted in some IDEs.</p>
+<h2 id="typing">Typing<a class="headerlink" href="#typing" title="Permanent link">&para;</a></h2>
+<p>I am not here to endorse Typing as the "correct" way to write Python (indeed, I'm hesitant with some perspectives towards typing). BUT, I am here to show you how (minimally) typing your code greatly helps. Typing can also show up in IDEs, which helps users and developers work with your code.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">threshold_otsu_minimum</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">min_value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get threshold value of an image</span>
+
+<span class="sd">    Return the threshold value of an image. If the value determined by</span>
+<span class="sd">    Otsu&#39;s algorithm is smaller than a minimum_value, then return the minimum value. </span>
+<span class="sd">    This strategy prevents thresholding below a specified value,</span>
+<span class="sd">    which is useful when an image may be all background and have no signal to threshold.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">threshold</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">threshold_otsu</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">min_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">min_value</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">:</span>
+        <span class="n">threshold</span> <span class="o">=</span> <span class="n">min_value</span>
+    <span class="k">return</span> <span class="n">threshold</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">threshold_otsu_minimum</span><span class="p">(</span>
+    <span class="n">img</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
+    <span class="n">min_value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get Otsu&#39;s threshold or a minimum of an image</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    img : np.ndarray</span>
+<span class="sd">        Image-like array to threshold</span>
+<span class="sd">    min_value : int or float or None, optional</span>
+<span class="sd">        Minimum return value for the threshold</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    threshold : int or float</span>
+<span class="sd">        Threshold value</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="o">...</span> 
+</code></pre></div>
+<h2 id="tests">Tests?!?!<a class="headerlink" href="#tests" title="Permanent link">&para;</a></h2>
+<p>Tests are another form of documentation. Tests help us crystallize for both ourselves and for collaborators the purpose of our code. At least for unit tests, they can also form a sort of documentation. Just some encouragement to take the time to write tests, they are as important as making functions that (you think) work.</p>
+<h2 id="code-style">Code Style<a class="headerlink" href="#code-style" title="Permanent link">&para;</a></h2>
+<p>Following a consistent code style can greatly help readability and understanding of a codebase. Sometimes, code style can become a mess in projects, and it also becomes harder to contribute to that project because there is uncertainty on even how to start writing code. If a project has a fairly regular codestyle, don't be afraid to contribute because these projects are (usually) very helpful at providing suggestions to adopt code to meet any standards that might exist. This particularly is better is the enemy of the good.</p>
+<p><a href="https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/document-your-code-api-docstrings.html#three-python-docstring-formats-and-why-we-like-numpy-style">PyOpenSci</a> has better words than I can write.</p>
+<p>You can also enforce code style or "lint" code with tools like ruff and pre-commit hooks.
+<a href="https://github.com/astral-sh/ruff">ruff</a> is the quickest way to get started, but really its a combination of so many previously used linting tools like Black, isort, flake8...</p>
+<h2 id="other-tips">Other Tips<a class="headerlink" href="#other-tips" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Functions / Methods should be visible on "one screen", so about 25 lines. Makes much easier to review! And you'll thank yourself! This generally helps with that "do one thing" that people who clearly understand things that way will say.</li>
+<li>Use <code>_object_name</code> to imply that the object is private and should not be relied on by users. This also can have a lower expectation for documentation, BUT tricky or frequently used private objects should still be documented :)</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

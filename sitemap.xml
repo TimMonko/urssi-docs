@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/advanced_markdown/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/docs_setup/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/docstrings/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/gh_repo_settings/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/notebooks/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/repo_setup/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://timmonko.github.io/urssi-docs/versioning/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+</urlset>
