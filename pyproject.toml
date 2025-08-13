@@ -26,9 +26,12 @@ dependencies = [
 
 [project.optional-dependencies]
 examples = [
+	"jupyter",
+	"matplotlib",
+	"scikit-image[data]"
 ]
 docs = [
-	"mkdocs"
+	"mkdocs-material"
 ]
 
 [project.urls] # Optional
