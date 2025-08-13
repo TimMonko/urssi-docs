@@ -24,12 +24,14 @@ dependencies = [
     "seaborn",
 ]
 
-optional_dependencies = [
-	"op_pkg"]
+[project]
+[project.optional-dependencies]
+examples = ["op_pkg"]
 
-
+docs = [ "mkdocs-material"]
 
 [project.urls] # Optional
 "Homepage" = "https://timmonko.github.io/urssi-docs/"
 "Bug Reports" = "https://github.com/timmonko/urssi-docs/issues"
 "Source" = "https://github.com/timmonko/urssi-docs/"
+"User Guide" = "https://www.mkdocs.org/user-guide/"
