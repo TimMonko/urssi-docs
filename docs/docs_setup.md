@@ -1,25 +1,18 @@
-# Creating documentation with uv and MkDocs
+# Creating documentation with MkDocs
 
 For preparing documentation, we will use [MkDocs](https://www.mkdocs.org/) with the [Material theme](https://squidfunk.github.io/mkdocs-material/). The Material theme is first class for MkDocs, and in fact many plugins are set up for Material and not the default MkDocs theme.
 
 ## Get MkDocs locally
 
-```bash
-uv init
-uv add mkdocs-material
-```
+We want to create a `pyproject.toml` file if we don't have one already, and then add `mkdocs-material` as an **optional** dependency. This will allow us to use the Material theme and plugins that are compatible with it (which is more than just mkdocs).
 
-or
-
-```bash
-uv pip install mkdocs-material
-```
+Then after activating the environment: `pip install -e ".[docs]"`
 
 ## Initialize a new MkDocs project
 
 ```bash
-uv run mkdocs new .
-uv run mkdocs serve
+mkdocs new .
+mkdocs serve
 ```
 
 Follow the [setup instructions](https://squidfunk.github.io/mkdocs-material/creating-your-site/) from mkdocs-material.
@@ -33,7 +26,7 @@ Make commits and push to your repo, preferably with a PR. (See [Recommended Gith
 To build the documentation locally, use
 
 ```bash
-uv run mkdocs build
+mkdocs build
 ```
 
 And it will create a `site/` directory with the built documentation.
