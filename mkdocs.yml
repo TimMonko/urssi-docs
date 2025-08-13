@@ -9,17 +9,18 @@ nav:
   - Repository Documentation: repo_setup.md
   - GitHub Repo Settings: gh_repo_settings.md
   - Documenting Code: docstrings.md
+  - Making Your Docs Shine: advanced_markdown.md
   - Notebooks: notebooks.ipynb
   - Versioning: versioning.md
 
 
 markdown_extensions:
   - admonition
-
   - toc:
       permalink: true
-
   # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
@@ -31,3 +32,6 @@ markdown_extensions:
 
 plugins:
   - mkdocs-jupyter:
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
