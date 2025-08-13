@@ -3,6 +3,16 @@ site_url: https://timmonko.github.io/urssi-docs/
 theme:
   name: material
 
+nav:
+  - Overview: index.md
+  - Docs Deployment: docs_setup.md
+  - Repository Documentation: repo_setup.md
+  - GitHub Repo Settings: gh_repo_settings.md
+  - Documenting Code: docstrings.md
+  - Notebooks: notebooks.ipynb
+  - Versioning: versioning.md
+
+
 markdown_extensions:
   - admonition
   - toc:
