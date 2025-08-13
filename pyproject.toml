@@ -24,6 +24,13 @@ dependencies = [
     "seaborn",
 ]
 
+[project.optional-dependecies]
+examples = [
+]
+docs = [
+	"mkdocs"
+]
+
 [project.urls] # Optional
 "Homepage" = "https://timmonko.github.io/urssi-docs/"
 "Bug Reports" = "https://github.com/timmonko/urssi-docs/issues"
