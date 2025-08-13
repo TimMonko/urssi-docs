@@ -24,7 +24,7 @@ dependencies = [
     "seaborn",
 ]
 
-[project.optional-dependecies]
+[project.optional-dependencies]
 examples = [
 ]
 docs = [
