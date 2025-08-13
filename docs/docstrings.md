@@ -1,6 +1,6 @@
 # Code Documentation
 
-In my experience docstrings and code style are the **best** way to assist reviewers of code -- both your future self and colleagues. Also, this is the documentation that saves yours and others life when it comes to future contribution. As such, this page will reflect on a variety of perhaps surprising ways that code gets documentated.
+In my experience docstrings and code style are the **best** way to assist reviewers of code -- both your future self and colleagues. Also, this is the documentation that saves yours and others life when it comes to future contribution. As such, this page will reflect on a variety of perhaps surprising ways that code gets documented.
 
 Most code documentation is *for developers*, but docstrings in particular are *for users*.
 
@@ -11,8 +11,6 @@ Documenting code has many perspectives, here are a few perspectives that I have 
 !!! note
     Sections have an opinionated order from most to least important.
 
-## Suggested Reading
-
 ## Object Names
 
 This is where documentation starts and is why its deserving of its own section. If objects are named poorly it becomes a real challenge to follow code.
@@ -22,28 +20,25 @@ Object names should bias towards descriptive rather than short. Single variables
 Longer names can be an especially useful form of self documentation, especially when objects are re-used across a codebase. 
 
 1. `img_array_width` not `width`
-2. `calculate_max_of_array()` not `do_math()` (see ![Typing] though)
+2. `calculate_max_of_array()` not `do_math()` (see [Typing](docstrings.md#typing) though)
 
 ## Docstrings
 
 These are especially helpful for collaboration with developers *and* are the main way to communicate to users. IDEs can richly show information if both docstrings and the IDE is set up correctly. Docstrings can be extremely powerful ways to document API, and docs tooling makes it very easy to add this to your website.
 
-```python
-def 
-
-```
+Great reading from [PyOpenSci](https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/document-your-code-api-docstrings.html)
 
 ## Commenting code
 
 Documentation of functionality via comments should be reserved for instances where the aforementioned code documentation is *insufficient* to understand what some lines are code are doing. Generally this explains as much *why* the implementation exists as it does *what* the implementation is.
 
-Other uses of comments include linking to references, such as external documentation, PRs, or explanations of bug/fixes. 
+Other uses of comments include linking to references, such as external documentation, PRs, or explanations of bug/fixes.
 
 `# TODO` can be used if you need to bookmark anything and is universal enough to be highlighted in some IDEs.
 
 ## Typing
 
-I am not here to endorse Typing as the "correct" way to write Python (indeed, I'm hesistant with some perspectives towards typing). BUT, I am here to show you how (minimally) typing your code greatly helps. Typing can also show up in IDEs, which helps users and developers work with your code.
+I am not here to endorse Typing as the "correct" way to write Python (indeed, I'm hesitant with some perspectives towards typing). BUT, I am here to show you how (minimally) typing your code greatly helps. Typing can also show up in IDEs, which helps users and developers work with your code.
 
 ```python
 def threshold_otsu_minimum(img, min_value = None):
@@ -70,12 +65,12 @@ def threshold_otsu_minimum(
     ----------
     img : np.ndarray
         Image-like array to threshold
-    min_value : Optional
+    min_value : int or float or None, optional
         Minimum return value for the threshold
 
     Returns
     -------
-    threshold : int | float
+    threshold : int or float
         Threshold value
     """
     ... 
@@ -85,17 +80,14 @@ def threshold_otsu_minimum(
 
 Tests are another form of documentation. Tests help us crystallize for both ourselves and for collaborators the purpose of our code. At least for unit tests, they can also form a sort of documentation. Just some encouragement to take the time to write tests, they are as important as making functions that (you think) work.
 
-```python
-def test_threshold_otsu_with_minimum():
-
-
-```
-
 ## Code Style
 
 Following a consistent code style can greatly help readability and understanding of a codebase. Sometimes, code style can become a mess in projects, and it also becomes harder to contribute to that project because there is uncertainty on even how to start writing code. If a project has a fairly regular codestyle, don't be afraid to contribute because these projects are (usually) very helpful at providing suggestions to adopt code to meet any standards that might exist. This particularly is better is the enemy of the good.
 
 [PyOpenSci](https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/document-your-code-api-docstrings.html#three-python-docstring-formats-and-why-we-like-numpy-style) has better words than I can write.
+
+You can also enforce code style or "lint" code with tools like ruff and pre-commit hooks.
+[ruff](https://github.com/astral-sh/ruff) is the quickest way to get started, but really its a combination of so many previously used linting tools like Black, isort, flake8...
 
 ## Other Tips
 
